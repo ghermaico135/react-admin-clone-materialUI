@@ -3,7 +3,7 @@
 import "./App.css";
 
 function App() {
-	return <div>react-admin</div>;
+	return <div className="app">react-admin</div>;
 }
 
 export default App;
