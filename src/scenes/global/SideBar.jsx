@@ -30,8 +30,8 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
       onClick={() => setSelected(title)}
       icon={icon}
     >
-      <Typography>{title}</Typography>
-      <Link to={to} />
+      <Typography >{title}</Typography>
+      <Link to={to}  />
     </MenuItem>
   );
 };
@@ -118,6 +118,7 @@ const sidebar = () => {
           )}
 
           <Box paddingLeft={isCollapsed ? undefined : "10%"}>
+            <Link  to="/" underline="none">
             <Item
               title="Dashboard"
               to="/"
@@ -125,7 +126,7 @@ const sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
-
+            </Link>
             <Typography
               variant="h6"
               color={colors.grey[300]}
@@ -133,6 +134,7 @@ const sidebar = () => {
             >
               Data
             </Typography>
+            <Link to="/team" underline="none">
             <Item
               title="Manage Team"
               to="/team"
@@ -140,6 +142,8 @@ const sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
+            </Link>
+            
             <Item
               title="Contacts Information"
               to="/contacts"
