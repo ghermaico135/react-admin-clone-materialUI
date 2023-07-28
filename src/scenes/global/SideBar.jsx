@@ -143,7 +143,7 @@ const sidebar = () => {
               setSelected={setSelected}
             />
             </Link>
-            
+            <Link to="/contacts">
             <Item
               title="Contacts Information"
               to="/contacts"
@@ -151,6 +151,8 @@ const sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
+            </Link>
+            
             <Item
               title="Invoices Balances"
               to="/invoices"
