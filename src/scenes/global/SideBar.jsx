@@ -152,7 +152,7 @@ const sidebar = () => {
               setSelected={setSelected}
             />
             </Link>
-            
+            <Link  to="/invoices">
             <Item
               title="Invoices Balances"
               to="/invoices"
@@ -160,6 +160,9 @@ const sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
+            </Link>
+
+            
 
             <Typography
               variant="h6"
