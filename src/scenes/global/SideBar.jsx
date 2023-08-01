@@ -171,6 +171,7 @@ const sidebar = () => {
             >
               Pages
             </Typography>
+            <Link to="/form">
             <Item
               title="Profile Form"
               to="/form"
@@ -178,6 +179,8 @@ const sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
+            </Link>
+            <Link to="/calendar"> 
             <Item
               title="Calendar"
               to="/calendar"
@@ -185,6 +188,7 @@ const sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
+            </Link>
             <Item
               title="FAQ Page"
               to="/faq"
