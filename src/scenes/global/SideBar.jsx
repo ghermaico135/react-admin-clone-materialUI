@@ -189,6 +189,7 @@ const sidebar = () => {
               setSelected={setSelected}
             />
             </Link>
+            <Link to="/faq">
             <Item
               title="FAQ Page"
               to="/faq"
@@ -196,7 +197,7 @@ const sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
-
+             </Link>
             <Typography
               variant="h6"
               color={colors.grey[300]}
